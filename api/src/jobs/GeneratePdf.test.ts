@@ -61,9 +61,7 @@ describe("PdfGenerator", () => {
         await generator.run();
 
         expect(http).toHaveBeenCalledWith("get", "http://foo/Item/test:123/Manifest");
-        expect(generatePdfSpy).toHaveBeenCalledWith([
-            "http://cantaloupe:8182/iiif/3/vudl%3A5/full/max/0/default.jpg",
-        ]);
+        expect(generatePdfSpy).toHaveBeenCalledWith(["http://cantaloupe:8182/iiif/3/vudl%3A5/full/max/0/default.jpg"]);
     });
 });
 

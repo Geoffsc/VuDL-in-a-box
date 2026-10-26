@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatastreamControls renders 1`] = `
+<DocumentFragment>
+  <div
+    class="datastreamControls MuiBox-root css-0"
+  >
+    <div
+      class="MuiButtonGroup-root MuiButtonGroup-text MuiButtonGroup-horizontal MuiButtonGroup-colorPrimary css-u5k47x-MuiButtonGroup-root"
+      role="group"
+    >
+      DatastreamControlButton: {"modalState":"Upload","disabled":false,"datastream":"test1"}DatastreamControlButton: {"modalState":"View","disabled":false,"datastream":"test1"}DatastreamControlButton: {"modalState":"Metadata","disabled":false,"datastream":"test1"}DatastreamControlButton: {"modalState":"Download","disabled":false,"datastream":"test1"}DatastreamControlButton: {"modalState":"Delete","disabled":false,"datastream":"test1"}
+    </div>
+  </div>
+</DocumentFragment>
+`;

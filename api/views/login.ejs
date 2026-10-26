@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sign in | VuDL</title>
+        <link rel="stylesheet" href="/stylesheets/style.css" />
+    </head>
+    <body class="login-page">
+        <main class="login-card">
+            <p class="login-brand">VuDL</p>
+            <h1>Sign in</h1>
+            <p class="login-intro">Use your account to access the digital library tools.</p>
+            <% if (failed) { %>
+                <p class="login-error" role="alert"><b>Login failed; please try again.</b></p>
+            <% } %>
+            <form action="/api/auth/login" method="post">
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" autocomplete="username" required />
+                <% if (requirePasswords) { %>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" name="password" autocomplete="current-password" required />
+                <% } else { %>
+                    <input type="hidden" name="password" value="placeholder" />
+                <% } %>
+                <button type="submit" class="primary">Submit</button>
+            </form>
+        </main>
+    </body>
+</html>

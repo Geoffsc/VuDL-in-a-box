@@ -1,0 +1,122 @@
+:root {
+    color-scheme: dark;
+    font-family:
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    color: #f1f5f9;
+    background: #0b1220;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body.login-page {
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1.5rem;
+    color: #f1f5f9;
+    background: radial-gradient(ellipse at 50% 0%, rgb(14 116 144 / 18%), transparent 55%), #0b1220;
+    font-size: 1rem;
+    line-height: 1.5;
+    place-items: center;
+}
+
+.login-card {
+    width: min(100%, 27rem);
+    padding: clamp(1.5rem, 5vw, 2.5rem);
+    background: #111c2e;
+    border: 1px solid #64748b;
+    border-radius: 0.75rem;
+    box-shadow: 0 1.5rem 4rem rgb(0 0 0 / 25%);
+}
+
+.login-brand {
+    margin: 0 0 1.5rem;
+    color: #7dd3fc;
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.login-card h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 5vw, 2.125rem);
+    letter-spacing: -0.03em;
+}
+
+.login-intro {
+    margin: 0.5rem 0 1.5rem;
+    color: #cbd5e1;
+}
+
+.login-card form {
+    display: grid;
+    gap: 0.625rem;
+}
+
+.login-card label {
+    margin-top: 0.5rem;
+    font-size: 0.9375rem;
+    font-weight: 600;
+}
+
+.login-card input:not([type="hidden"]) {
+    width: 100%;
+    min-height: 2.875rem;
+    padding: 0.625rem 0.75rem;
+    color: #f1f5f9;
+    background: #0b1220;
+    border: 1px solid #94a3b8;
+    border-radius: 0.375rem;
+    font: inherit;
+}
+
+.login-card input:not([type="hidden"]):focus-visible,
+.login-card button:focus-visible {
+    outline: 3px solid #7dd3fc;
+    outline-offset: 3px;
+}
+
+.login-card button {
+    min-height: 2.875rem;
+    margin-top: 1rem;
+    padding: 0.625rem 1rem;
+    color: #082f49;
+    background: #7dd3fc;
+    border: 1px solid #7dd3fc;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font: inherit;
+    font-weight: 700;
+}
+
+.login-card button:hover {
+    background: #bae6fd;
+    border-color: #bae6fd;
+}
+
+.login-error {
+    margin: 1rem 0;
+    padding: 0.75rem 1rem;
+    color: #fee2e2;
+    background: #7f1d1d;
+    border: 1px solid #fca5a5;
+    border-radius: 0.375rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

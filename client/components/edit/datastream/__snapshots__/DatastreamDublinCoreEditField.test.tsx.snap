@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatastreamDublinCoreEditField renders a dropdown field 1`] = `
+<DocumentFragment>
+  FormControl
+  <div
+    class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiNativeSelect-root css-19dnofg-MuiInputBase-root-MuiInput-root"
+  >
+    <select
+      class="MuiNativeSelect-select MuiNativeSelect-standard MuiInputBase-input MuiInput-input css-1xaqj7c-MuiNativeSelect-root-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input"
+    >
+      <option
+        value="foo"
+      >
+        foo
+      </option>
+      <option
+        value="bar"
+      >
+        bar
+      </option>
+      <option
+        value="baz"
+      >
+        baz
+      </option>
+    </select>
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiNativeSelect-icon MuiNativeSelect-iconStandard css-ahzrpl-MuiSvgIcon-root-MuiNativeSelect-root-MuiNativeSelect-icon"
+      data-testid="ArrowDropDownIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DatastreamDublinCoreEditField renders a dropdown field with an unexpected value 1`] = `
+<DocumentFragment>
+  FormControl
+  <div
+    class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiNativeSelect-root css-19dnofg-MuiInputBase-root-MuiInput-root"
+  >
+    <select
+      class="MuiNativeSelect-select MuiNativeSelect-standard MuiInputBase-input MuiInput-input css-1xaqj7c-MuiNativeSelect-root-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input"
+    >
+      <option
+        value="foo"
+      >
+        foo
+      </option>
+    </select>
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiNativeSelect-icon MuiNativeSelect-iconStandard css-ahzrpl-MuiSvgIcon-root-MuiNativeSelect-root-MuiNativeSelect-icon"
+      data-testid="ArrowDropDownIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M7 10l5 5 5-5z"
+      />
+    </svg>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DatastreamDublinCoreEditField renders a locked field 1`] = `
+<DocumentFragment>
+  FormControlFormControl (disabled))
+  <div
+    class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+  >
+    <input
+      class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+      id="_r_0_"
+      type="text"
+      value="foo"
+    />
+    <fieldset
+      aria-hidden="true"
+      class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+    >
+      <legend
+        class="css-1nf2c5d-MuiNotchedOutlined-root"
+      >
+        <span
+          aria-hidden="true"
+          class="notranslate"
+        >
+          ​
+        </span>
+      </legend>
+    </fieldset>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`DatastreamDublinCoreEditField renders a text field 1`] = `
+<DocumentFragment>
+  FormControlBlurSavingTextField: {"value":"foo"}
+</DocumentFragment>
+`;
+
+exports[`DatastreamDublinCoreEditField renders an html field 1`] = `
+<DocumentFragment>
+  TinyMCE
+</DocumentFragment>
+`;
+
+exports[`DatastreamDublinCoreEditField renders an unknown field 1`] = `
+<DocumentFragment>
+  <p>
+    Unsupported type (unknown): foo
+  </p>
+</DocumentFragment>
+`;

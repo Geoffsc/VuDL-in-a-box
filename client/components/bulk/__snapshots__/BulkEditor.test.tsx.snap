@@ -1,0 +1,115 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BulkEditor renders 1`] = `
+<DocumentFragment>
+  <div>
+    BasicBreadcrumbs
+    <h1>
+      Bulk Editor
+    </h1>
+    <h2>
+      Record Selector
+    </h2>
+    <div
+      class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1xp5r68-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-outlined css-19qnlrw-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="false"
+          for="search-query"
+          id="search-query-label"
+        >
+          Search Query
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+            id="search-query"
+            type="text"
+            value=""
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-1n64csd-MuiNotchedOutlined-root"
+            >
+              <span>
+                Search Query
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <label>
+      Limit to children of this PID (optional):
+    </label>
+    <div
+      class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+    >
+      PidPicker: {"selected":""}
+    </div>
+    <div
+      class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root css-1xp5r68-MuiFormControl-root-MuiTextField-root"
+      >
+        <label
+          class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined MuiFormLabel-colorPrimary MuiFormLabel-filled MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated MuiInputLabel-shrink MuiInputLabel-outlined css-113d811-MuiFormLabel-root-MuiInputLabel-root"
+          data-shrink="true"
+          for="result-limit"
+          id="result-limit-label"
+        >
+          Result Limit
+        </label>
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+            id="result-limit"
+            type="text"
+            value="50"
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-ex8a5f-MuiNotchedOutlined-root"
+            >
+              <span>
+                Result Limit
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+    <div
+      class="MuiFormControl-root css-1iw3t7y-MuiFormControl-root"
+    >
+      <button>
+        Fetch Records
+      </button>
+    </div>
+    <p>
+      0 selected.
+    </p>
+    <pre
+      id="selectedRecords"
+      title="Selected Records"
+    />
+  </div>
+</DocumentFragment>
+`;

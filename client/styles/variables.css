@@ -1,0 +1,118 @@
+/* Radix colors imported in _app.tsx */
+
+:root {
+    color-scheme: dark;
+
+    --page: #0b1220;
+    --panel: #111c2e;
+    --soft: #1e293b;
+    --edge: #64748b;
+    --mute: #cbd5e1;
+    --text: #f1f5f9;
+    --text-muted: var(--mute);
+
+    --family-sans-serif: system-ui, ui-sans-serif, sans-serif;
+    --family-serif: ui-serif, serif;
+    --family-monospace: ui-monospace, monospace;
+
+    --primary: #7dd3fc;
+    --primary-text: #082f49;
+    --link: #7dd3fc;
+
+    --secondary: #475569;
+    --secondary-text: #f8fafc;
+
+    --button-face: #1e293b;
+    --button-text: #f1f5f9;
+
+    --button-hover: #bae6fd;
+    --button-hover-text: #082f49;
+
+    --active: #fca5a5;
+    --active-text: #450a0a;
+
+    --selected: #14532d;
+    --selected-text: #f0fdf4;
+    --selected-border: #4ade80;
+
+    --info: #0c4a6e;
+    --info-text: #e0f2fe;
+    --info-border: #38bdf8;
+
+    --success: #14532d;
+    --success-text: #dcfce7;
+
+    --danger: #7f1d1d;
+    --danger-text: #fee2e2;
+
+    --object-status-active: #14532d;
+    --object-status-inactive: #713f12;
+    --object-status-deleted: #7f1d1d;
+    --object-status-unknown: #334155;
+
+    --object-status-active-text: #86efac;
+    --object-status-inactive-text: #fde68a;
+    --object-status-deleted-text: #fca5a5;
+    --object-status-unknown-text: #e2e8f0;
+
+    --object-status-active-hover-text: #052e16;
+    --object-status-inactive-hover-text: #422006;
+    --object-status-deleted-hover-text: #450a0a;
+    --object-status-unknown-hover-text: #0f172a;
+}
+
+:root[data-theme="light"] {
+    color-scheme: light;
+
+    --page: #f8fafc;
+    --panel: #ffffff;
+    --soft: #f1f5f9;
+    --edge: #64748b;
+    --mute: #475569;
+    --text: #0f172a;
+
+    --primary: #075985;
+    --primary-text: #ffffff;
+    --link: #075985;
+
+    --secondary: #475569;
+    --secondary-text: #ffffff;
+
+    --button-face: #ffffff;
+    --button-text: #0f172a;
+
+    --button-hover: #0c4a6e;
+    --button-hover-text: #ffffff;
+
+    --active: #fee2e2;
+    --active-text: #7f1d1d;
+
+    --selected: #dcfce7;
+    --selected-text: #14532d;
+    --selected-border: #15803d;
+
+    --info: #e0f2fe;
+    --info-text: #0c4a6e;
+    --info-border: #0284c7;
+
+    --success: #dcfce7;
+    --success-text: #14532d;
+
+    --danger: #fee2e2;
+    --danger-text: #7f1d1d;
+
+    --object-status-active: #dcfce7;
+    --object-status-inactive: #fef3c7;
+    --object-status-deleted: #fee2e2;
+    --object-status-unknown: #e2e8f0;
+
+    --object-status-active-text: #166534;
+    --object-status-inactive-text: #a16207;
+    --object-status-deleted-text: #b91c1c;
+    --object-status-unknown-text: #475569;
+
+    --object-status-active-hover-text: #ffffff;
+    --object-status-inactive-hover-text: #ffffff;
+    --object-status-deleted-hover-text: #ffffff;
+    --object-status-unknown-hover-text: #ffffff;
+}

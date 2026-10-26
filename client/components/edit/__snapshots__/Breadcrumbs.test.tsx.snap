@@ -1,0 +1,1145 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb renders using ajax-loaded object data (deep parent chain) 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:0"
+      >
+        Fake Parent 0
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1"
+      >
+        Fake Parent 1
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:2"
+      >
+        Fake Parent 2
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:3"
+      >
+        Fake Parent 3
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:4"
+      >
+        Fake Parent 4
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:5"
+      >
+        Fake Parent 5
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:6"
+      >
+        Fake Parent 6
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:7"
+      >
+        Fake Parent 7
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:8"
+      >
+        Fake Parent 8
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:9"
+      >
+        Fake Parent 9
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:10"
+      >
+        Fake Parent 10
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:11"
+      >
+        Fake Parent 11
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:12"
+      >
+        Fake Parent 12
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:13"
+      >
+        Fake Parent 13
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:14"
+      >
+        Fake Parent 14
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders using ajax-loaded object data (many parents, deep mode) 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:0"
+      >
+        Fake Parent 0
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1"
+      >
+        Fake Parent 1
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:2"
+      >
+        Fake Parent 2
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:3"
+      >
+        Fake Parent 3
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:4"
+      >
+        Fake Parent 4
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:5"
+      >
+        Fake Parent 5
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:6"
+      >
+        Fake Parent 6
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:7"
+      >
+        Fake Parent 7
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:8"
+      >
+        Fake Parent 8
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:9"
+      >
+        Fake Parent 9
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:10"
+      >
+        Fake Parent 10
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:11"
+      >
+        Fake Parent 11
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:12"
+      >
+        Fake Parent 12
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:13"
+      >
+        Fake Parent 13
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:14"
+      >
+        Fake Parent 14
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders using ajax-loaded object data (many parents, shallow mode) 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:0"
+      >
+        Fake Parent 0
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1"
+      >
+        Fake Parent 1
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:2"
+      >
+        Fake Parent 2
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:3"
+      >
+        Fake Parent 3
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:4"
+      >
+        Fake Parent 4
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:5"
+      >
+        Fake Parent 5
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:6"
+      >
+        Fake Parent 6
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:7"
+      >
+        Fake Parent 7
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:8"
+      >
+        Fake Parent 8
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:9"
+      >
+        Fake Parent 9
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:10"
+      >
+        Fake Parent 10
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:11"
+      >
+        Fake Parent 11
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:12"
+      >
+        Fake Parent 12
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:13"
+      >
+        Fake Parent 13
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:14"
+      >
+        Fake Parent 14
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders using ajax-loaded object data (multiple parents with common grandparent) 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1232"
+      >
+        Fake Grandparent
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1233"
+      >
+        Fake Parent 1
+      </a>
+    </li>
+  </ul>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1232"
+      >
+        Fake Grandparent
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1231"
+      >
+        Fake Parent 2
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders using ajax-loaded object data (no parents, deep mode) 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders using ajax-loaded object data (no parents, shallow mode) 1`] = `
+<DocumentFragment>
+  <span>
+    Loading...
+  </span>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders using ajax-loaded object data (simple case, deep mode) 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1233"
+      >
+        Fake Parent
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders using ajax-loaded object data (simple case, shallow mode) 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/edit"
+      >
+        Edit Home
+      </a>
+    </li>
+    <li>
+      <button>
+        ...
+      </button>
+    </li>
+    <li>
+      <a
+        href="/edit/object/foo:1233"
+      >
+        Fake Parent
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;
+
+exports[`Breadcrumb renders without a pid 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+  </ul>
+</DocumentFragment>
+`;

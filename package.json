@@ -1,0 +1,48 @@
+{
+  "name": "vudl",
+  "private": true,
+  "engine": {
+    "node": ">=20.0.0"
+  },
+  "comments": {
+    "dev": "tsc can't be bundled into concurrently because it suppresses the logs of other processes. Still needs to be run separately."
+  },
+  "scripts": {
+    "api": "cd api && npm run start:server",
+    "api:build": "cd api && npm run build",
+    "api:dev": "cd api && npm run start:serverWatch",
+    "api:format": "cd api && npm run format",
+    "api:lint": "cd api && npm run lint",
+    "api:saml:metadata": "cd api && npm run saml:metadata",
+    "api:setup": "cd api && npm ci",
+    "api:test": "cd api && npm test",
+    "api:testWatch": "cd api && npm run testWatch",
+    "client": "cd client && npm run prod",
+    "client:build": "cd client && npm run build",
+    "client:dev": "cd client && npm run start",
+    "client:format": "cd client && npm run format",
+    "client:lint": "cd client && npm run lint",
+    "client:setup": "cd client && npm ci",
+    "client:snapshots": "cd client && npm run snapshots",
+    "client:test": "cd client && npm test",
+    "client:testWatch": "cd client && npm run testWatch",
+    "queue": "cd api && npm run start:worker",
+    "queue:dev": "cd api && npm run start:workerWatch",
+    "ingest": "node api/scripts/ingest.js",
+    "backend": "concurrently npm:api npm:queue",
+    "backend:dev": "concurrently npm:api:dev npm:queue:dev",
+    "build": "concurrently npm:api:build npm:client:build",
+    "dev": "concurrently -c 'cyan,green,gray' npm:client:dev npm:api:dev npm:queue:dev",
+    "format": "concurrently npm:client:format npm:api:format",
+    "lint": "concurrently npm:client:lint npm:api:lint",
+    "setup": "concurrently npm:api:setup npm:client:setup",
+    "start": "concurrently -c 'cyan,green,gray' npm:client npm:api npm:queue",
+    "test": "concurrently npm:client:test npm:api:test",
+    "watch": "cd api && npm run watch",
+    
+    "postinstall": "npm run setup"
+  },
+  "devDependencies": {
+    "concurrently": "^10"
+  }
+}

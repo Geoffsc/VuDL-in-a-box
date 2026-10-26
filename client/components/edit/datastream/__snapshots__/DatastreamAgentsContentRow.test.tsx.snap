@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatastreamAgentsContentRow renders 1`] = `
+<DocumentFragment>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-grid-xs-3 css-bfz6d7-MuiGrid-root"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded css-3540vd-MuiPaper-root"
+    >
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiNativeSelect-root agentRoleSelect css-nxdme1-MuiInputBase-root-MuiInput-root"
+        >
+          <select
+            aria-invalid="false"
+            aria-label="Select Role"
+            class="MuiNativeSelect-select MuiNativeSelect-outlined MuiInputBase-input MuiInput-input css-b4m9gu-MuiNativeSelect-root-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input"
+          >
+            <option
+              value=""
+            />
+            <option
+              value="role1"
+            >
+              role1
+            </option>
+          </select>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiNativeSelect-icon MuiNativeSelect-iconOutlined css-1bjnys1-MuiSvgIcon-root-MuiNativeSelect-root-MuiNativeSelect-icon"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-grid-xs-3 css-bfz6d7-MuiGrid-root"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded css-3540vd-MuiPaper-root"
+    >
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+      >
+        <div
+          class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiNativeSelect-root agentTypeSelect css-nxdme1-MuiInputBase-root-MuiInput-root"
+        >
+          <select
+            aria-invalid="false"
+            aria-label="Select Type"
+            class="MuiNativeSelect-select MuiNativeSelect-outlined MuiInputBase-input MuiInput-input css-b4m9gu-MuiNativeSelect-root-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input"
+          >
+            <option
+              value=""
+            />
+            <option
+              value="type1"
+            >
+              type1
+            </option>
+          </select>
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiNativeSelect-icon MuiNativeSelect-iconOutlined css-1bjnys1-MuiSvgIcon-root-MuiNativeSelect-root-MuiNativeSelect-icon"
+            data-testid="ArrowDropDownIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M7 10l5 5 5-5z"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-grid-xs-5 css-stpzej-MuiGrid-root"
+  >
+    <div
+      class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+    >
+      <div
+        class="MuiFormControl-root MuiTextField-root agentNameTextField css-1xp5r68-MuiFormControl-root-MuiTextField-root"
+      >
+        <div
+          class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+        >
+          <input
+            aria-invalid="false"
+            class="MuiInputBase-input MuiOutlinedInput-input css-16wblaj-MuiInputBase-input-MuiOutlinedInput-input"
+            id="_r_0_"
+            type="text"
+            value="test3"
+          />
+          <fieldset
+            aria-hidden="true"
+            class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+          >
+            <legend
+              class="css-1nf2c5d-MuiNotchedOutlined-root"
+            >
+              <span
+                aria-hidden="true"
+                class="notranslate"
+              >
+                ​
+              </span>
+            </legend>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-grid-xs-1 css-1lq76pe-MuiGrid-root"
+  >
+    <div
+      class="MuiPaper-root MuiPaper-outlined MuiPaper-rounded css-qkuwr6-MuiPaper-root"
+    >
+      <div
+        class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+      >
+        <div
+          class="MuiButtonGroup-root MuiButtonGroup-outlined MuiButtonGroup-horizontal MuiButtonGroup-colorPrimary css-1uv3h2m-MuiButtonGroup-root"
+          role="group"
+        >
+          <button
+            class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+            tabindex="0"
+            type="button"
+          >
+            <svg
+              aria-hidden="true"
+              class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+              data-testid="ExpandCircleDownIcon"
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2m0 13.5L7.5 11l1.42-1.41L12 12.67l3.08-3.08L16.5 11z"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  DatastreamAgentsContentNotes
+</DocumentFragment>
+`;

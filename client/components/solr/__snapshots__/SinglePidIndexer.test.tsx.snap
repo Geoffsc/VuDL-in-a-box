@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SinglePidIndexer renders 1`] = `
+<DocumentFragment>
+  <label>
+    PID: 
+    <input
+      id="solrIndexPid"
+      type="text"
+      value=""
+    />
+  </label>
+  <button
+    id="solrIndexPreviewButton"
+  >
+    Preview
+  </button>
+  <button
+    id="solrIndexIndexButton"
+  >
+    Index
+  </button>
+</DocumentFragment>
+`;

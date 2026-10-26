@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PidRangeIndexer renders 1`] = `
+<DocumentFragment>
+  <label>
+    Prefix:
+    <input
+      id="pidRangePrefix"
+      type="text"
+      value="vudl:"
+    />
+  </label>
+  <label>
+    From (number):
+    <input
+      id="pidRangeFrom"
+      type="text"
+      value=""
+    />
+  </label>
+  <label>
+    To (number): 
+    <input
+      id="pidRangeTo"
+      type="text"
+      value=""
+    />
+  </label>
+  <button>
+    Queue Range
+  </button>
+</DocumentFragment>
+`;

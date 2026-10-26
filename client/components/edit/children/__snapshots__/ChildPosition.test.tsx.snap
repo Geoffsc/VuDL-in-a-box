@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChildPosition renders correctly when a sequence exists and parent is custom sorted 1`] = `
+<DocumentFragment>
+  <div
+    aria-label="Position in foo:122"
+    class="MuiFormControl-root MuiTextField-root css-1jok6kl-MuiFormControl-root-MuiTextField-root"
+  >
+    <div
+      class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary MuiInputBase-formControl MuiInputBase-sizeSmall css-quhxjy-MuiInputBase-root-MuiOutlinedInput-root"
+    >
+      <input
+        aria-invalid="false"
+        class="MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-1pzfmz2-MuiInputBase-input-MuiOutlinedInput-input"
+        id="_r_0_"
+        type="text"
+        value="73"
+      />
+      <fieldset
+        aria-hidden="true"
+        class="MuiOutlinedInput-notchedOutline css-18p5xg2-MuiNotchedOutlined-root-MuiOutlinedInput-notchedOutline"
+      >
+        <legend
+          class="css-1nf2c5d-MuiNotchedOutlined-root"
+        >
+          <span
+            aria-hidden="true"
+            class="notranslate"
+          >
+            ​
+          </span>
+        </legend>
+      </fieldset>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChildPosition renders correctly when a sequence exists and parent is not custom sorted 1`] = `<DocumentFragment />`;
+
+exports[`ChildPosition renders correctly when no sort or sequence exists 1`] = `<DocumentFragment />`;

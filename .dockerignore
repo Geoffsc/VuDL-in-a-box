@@ -1,0 +1,8 @@
+.git
+**/node_modules
+**/.next
+client/build
+coverage
+data
+api/vudl.ini
+*.log

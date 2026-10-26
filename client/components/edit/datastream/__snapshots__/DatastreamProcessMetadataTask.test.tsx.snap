@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DatastreamProcessMetadataTask renders with tool presets 1`] = `
+<DocumentFragment>
+  <hr
+    style="margin-bottom: 20px;"
+  />
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Sequence"},"value":"seq"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Label"},"value":"lab"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Description"},"value":"des"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Individual"},"value":"ind"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    <label>
+      Select a preset tool:
+      <div
+        class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-formControl MuiNativeSelect-root css-nxdme1-MuiInputBase-root-MuiInput-root"
+      >
+        <select
+          aria-invalid="false"
+          class="MuiNativeSelect-select MuiNativeSelect-outlined MuiInputBase-input MuiInput-input css-b4m9gu-MuiNativeSelect-root-MuiNativeSelect-select-MuiInputBase-input-MuiInput-input"
+        >
+          <option
+            value="0"
+          >
+            My Tool
+          </option>
+        </select>
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiNativeSelect-icon MuiNativeSelect-iconOutlined css-1bjnys1-MuiSvgIcon-root-MuiNativeSelect-root-MuiNativeSelect-icon"
+          data-testid="ArrowDropDownIcon"
+          focusable="false"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M7 10l5 5 5-5z"
+          />
+        </svg>
+      </div>
+    </label>
+  </div>
+  <button>
+    Apply Preset
+  </button>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Tool"},"value":"tool-lab"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Tool Description"},"value":"tool-des"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Tool Make"},"value":"tool-mak"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Tool Version"},"value":"tool-ver"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Tool Serial Number"},"value":"tool-ser"}
+  </div>
+  <button
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+    tabindex="0"
+    type="button"
+  >
+    Add Below
+  </button>
+  <button
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+    tabindex="0"
+    type="button"
+  >
+    Delete Task
+  </button>
+</DocumentFragment>
+`;
+
+exports[`DatastreamProcessMetadataTask renders without tool presets 1`] = `
+<DocumentFragment>
+  <hr
+    style="margin-bottom: 20px;"
+  />
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Sequence"},"value":"seq"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Label"},"value":"lab"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Description"},"value":"des"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Individual"},"value":"ind"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Task Tool"},"value":"tool-lab"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Tool Description"},"value":"tool-des"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Tool Make"},"value":"tool-mak"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Tool Version"},"value":"tool-ver"}
+  </div>
+  <div
+    class="MuiFormControl-root MuiFormControl-fullWidth css-ytlejw-MuiFormControl-root"
+  >
+    BlurSavingTextField: {"options":{"label":"Tool Serial Number"},"value":"tool-ser"}
+  </div>
+  <button
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+    tabindex="0"
+    type="button"
+  >
+    Add Below
+  </button>
+  <button
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+    tabindex="0"
+    type="button"
+  >
+    Delete Task
+  </button>
+</DocumentFragment>
+`;

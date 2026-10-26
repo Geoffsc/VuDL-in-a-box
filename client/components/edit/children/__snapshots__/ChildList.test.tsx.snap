@@ -1,0 +1,344 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ChildList allows child counts to be toggled on 1`] = `
+<DocumentFragment>
+  <div
+    class="childlist"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-mwb7rv-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-grow css-1ynczkt-MuiGrid-root"
+      >
+         
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto childlist__toggles css-1hef13s-MuiGrid-root"
+      >
+        <button>
+          Show Thumbnails
+        </button>
+        <button>
+          Show Models
+        </button>
+        <button>
+          Hide Child Counts
+        </button>
+      </div>
+    </div>
+    <ul
+      class="childlist__list"
+    >
+      <li>
+        Child
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChildList allows models to be toggled on 1`] = `
+<DocumentFragment>
+  <div
+    class="childlist"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-mwb7rv-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-grow css-1ynczkt-MuiGrid-root"
+      >
+         
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto childlist__toggles css-1hef13s-MuiGrid-root"
+      >
+        <button>
+          Show Thumbnails
+        </button>
+        <button>
+          Hide Models
+        </button>
+        <button>
+          Show Child Counts
+        </button>
+      </div>
+    </div>
+    <ul
+      class="childlist__list"
+    >
+      <li>
+        Child
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChildList allows thumbnails to be toggled on 1`] = `
+<DocumentFragment>
+  <div
+    class="childlist"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-mwb7rv-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-grow css-1ynczkt-MuiGrid-root"
+      >
+         
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto childlist__toggles css-1hef13s-MuiGrid-root"
+      >
+        <button>
+          Hide Thumbnails
+        </button>
+        <button>
+          Show Models
+        </button>
+        <button>
+          Show Child Counts
+        </button>
+      </div>
+    </div>
+    <ul
+      class="childlist__list"
+    >
+      <li>
+        Child
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChildList displays a paginator when appropriate 1`] = `
+<DocumentFragment>
+  <div
+    class="childlist"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-mwb7rv-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      >
+        <p
+          class="childlist__pagination"
+        >
+          Showing 1 - 10 of 10000
+        </p>
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      >
+        Pagination
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-grow css-1ynczkt-MuiGrid-root"
+      >
+         
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto childlist__toggles css-1hef13s-MuiGrid-root"
+      >
+        <button>
+          Show Thumbnails
+        </button>
+        <button>
+          Show Models
+        </button>
+        <button>
+          Show Child Counts
+        </button>
+      </div>
+    </div>
+    <ul
+      class="childlist__list"
+    >
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+      <li>
+        Child
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChildList renders using SelectableChild when a callback is provided 1`] = `
+<DocumentFragment>
+  <div
+    class="childlist"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-mwb7rv-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-grow css-1ynczkt-MuiGrid-root"
+      >
+         
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto childlist__toggles css-1hef13s-MuiGrid-root"
+      >
+        <button>
+          Show Thumbnails
+        </button>
+        <button>
+          Show Models
+        </button>
+        <button>
+          Show Child Counts
+        </button>
+      </div>
+    </div>
+    <ul
+      class="childlist__list"
+    >
+      <li>
+        SelectableChild
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChildList renders using ajax-loaded object data 1`] = `
+<DocumentFragment>
+  <div
+    class="childlist"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-mwb7rv-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-grow css-1ynczkt-MuiGrid-root"
+      >
+         
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto childlist__toggles css-1hef13s-MuiGrid-root"
+      >
+        <button>
+          Show Thumbnails
+        </button>
+        <button>
+          Show Models
+        </button>
+        <button>
+          Show Child Counts
+        </button>
+      </div>
+    </div>
+    <ul
+      class="childlist__list"
+    >
+      <li>
+        Child
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`ChildList renders using ajax-loaded root data 1`] = `
+<DocumentFragment>
+  <div
+    class="childlist"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row MuiGrid-spacing-xs-2 css-mwb7rv-MuiGrid-root"
+    >
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto css-1hef13s-MuiGrid-root"
+      />
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-grow css-1ynczkt-MuiGrid-root"
+      >
+         
+      </div>
+      <div
+        class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-auto childlist__toggles css-1hef13s-MuiGrid-root"
+      >
+        <button>
+          Show Thumbnails
+        </button>
+        <button>
+          Show Models
+        </button>
+        <button>
+          Show Child Counts
+        </button>
+      </div>
+    </div>
+    <ul
+      class="childlist__list"
+    >
+      <li>
+        Child
+      </li>
+    </ul>
+  </div>
+</DocumentFragment>
+`;

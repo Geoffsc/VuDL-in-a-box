@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Datastream renders 1`] = `
+<DocumentFragment>
+  <li
+    class="MuiListItem-root datastream MuiListItem-gutters MuiListItem-padding css-1p4qrhw-MuiListItem-root"
+  >
+    <div
+      class="MuiListItemText-root css-cfq8qh-MuiListItemText-root"
+    >
+      <span
+        class="MuiTypography-root MuiTypography-body1 MuiListItemText-primary css-rizt0-MuiTypography-root"
+      >
+        test1
+      </span>
+    </div>
+    <div
+      class="MuiListItemSecondaryAction-root MuiListItem-secondaryAction css-zezwi5-MuiListItemSecondaryAction-root"
+    >
+      DatastreamControls
+    </div>
+  </li>
+</DocumentFragment>
+`;

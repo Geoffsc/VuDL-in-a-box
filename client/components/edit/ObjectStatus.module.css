@@ -1,0 +1,51 @@
+.status_btn {
+    min-width: 120px;
+
+    &:is(:hover, &:focus) {
+        color: var(--button-text);
+    }
+}
+
+.status_btn.active {
+    background-color: var(--object-status-active);
+
+    &:hover,
+    &:focus {
+        color: var(--object-status-active-hover-text);
+        background-color: var(--object-status-active-text);
+        border-color: var(--object-status-active-text);
+    }
+}
+
+.status_btn.inactive {
+    background-color: var(--object-status-inactive);
+
+    &:hover,
+    &:focus {
+        color: var(--object-status-inactive-hover-text);
+        background-color: var(--object-status-inactive-text);
+        border-color: var(--object-status-inactive-text);
+    }
+}
+
+.status_btn.deleted {
+    background-color: var(--object-status-deleted);
+
+    &:hover,
+    &:focus {
+        color: var(--object-status-deleted-hover-text);
+        background-color: var(--object-status-deleted-text);
+        border-color: var(--object-status-deleted-text);
+    }
+}
+
+.status_btn.unknown {
+    background-color: var(--object-status-unknown);
+
+    &:hover,
+    &:focus {
+        color: var(--object-status-unknown-hover-text);
+        background-color: var(--object-status-unknown-text);
+        border-color: var(--object-status-unknown-text);
+    }
+}

@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`JobPaginator renders 1`] = `
+<DocumentFragment>
+  <ul
+    class="breadcrumbs"
+  >
+    <li>
+      <a
+        href="/"
+      >
+        Main Menu
+      </a>
+    </li>
+    <li>
+      <a
+        href="/paginate"
+      >
+        Paginator
+      </a>
+    </li>
+    <li>
+      testCategory testJob
+    </li>
+  </ul>
+  <div
+    class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-row css-d64g0g-MuiGrid-root"
+    id="paginator"
+  >
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-6 css-1ml5fja-MuiGrid-root"
+    >
+      JobPaginatorZoomToggle
+    </div>
+    <div
+      class="MuiGrid-root MuiGrid-direction-xs-row MuiGrid-grid-xs-6 css-1ml5fja-MuiGrid-root"
+    >
+      PaginatorControlsPaginatorList
+    </div>
+  </div>
+</DocumentFragment>
+`;

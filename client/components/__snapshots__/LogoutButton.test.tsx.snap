@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogoutButton renders correctly when logged in 1`] = `
+<DocumentFragment>
+  <div
+    class="logout"
+  >
+    <a
+      class="button btn-primary"
+      href="http://localhost:9000/api/auth/logout"
+    >
+      Log Out
+    </a>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`LogoutButton renders correctly when logged out 1`] = `<DocumentFragment />`;

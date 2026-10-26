@@ -1,0 +1,132 @@
+services:
+  app:
+    build: .
+    init: true
+    ports:
+      - "3000:3000"
+      - "9000:9000"
+    volumes:
+      - .:/app
+      - root_node_modules:/app/node_modules
+      - api_node_modules_v2:/app/api/node_modules
+      - client_node_modules:/app/client/node_modules
+      - vudl_data:/data
+      - ./docker/vudl.ini:/app/api/vudl.ini:ro
+    depends_on:
+      redis:
+        condition: service_healthy
+      solr:
+        condition: service_healthy
+      fedora:
+        condition: service_healthy
+      vufind:
+        condition: service_healthy
+
+  redis:
+    image: redis:7-bookworm
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  mariadb:
+    image: mariadb:11.4
+    environment:
+      MARIADB_DATABASE: vufind
+      MARIADB_USER: vufind
+      MARIADB_PASSWORD: vufind
+      MARIADB_ROOT_PASSWORD: vufind-root
+    volumes:
+      - vufind_db:/var/lib/mysql
+      - ./docker/mariadb/init/10-vufind-change-tracker.sql:/docker-entrypoint-initdb.d/10-vufind-change-tracker.sql:ro
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+
+  solr:
+    build:
+      context: ./docker/solr
+      args:
+        VUFIND_VERSION: v11.1.0
+    ports:
+      - "127.0.0.1:8983:8983"
+    volumes:
+      - solr_data:/var/solr
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS 'http://localhost:8983/solr/biblio/select?q=*:*&rows=0' > /dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+
+  vufind:
+    build: ./docker/vufind
+    ports:
+      - "127.0.0.1:8081:8081"
+    environment:
+      VUFIND_LOCAL_DIR: /usr/local/vufind/local
+      VUFIND_LOCAL_MODULES: DigLib
+    volumes:
+      - ./docker/vufind/config/vufind/VuDL.ini:/usr/local/vufind/local/config/vufind/VuDL.ini:ro
+      - vufind_cache:/usr/local/vufind/local/cache
+    depends_on:
+      solr:
+        condition: service_healthy
+      fedora:
+        condition: service_healthy
+      cantaloupe:
+        condition: service_healthy
+      mariadb:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS http://localhost:8081/ > /dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 90s
+
+  cantaloupe:
+    build: ./docker/cantaloupe
+    ports:
+      - "127.0.0.1:8182:8182"
+    volumes:
+      - ./docker/cantaloupe/cantaloupe.properties:/etc/cantaloupe.properties:ro
+    depends_on:
+      fedora:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8182/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+      start_period: 30s
+
+  fedora:
+    image: fcrepo/fcrepo:6.5.2-tomcat9
+    environment:
+      FEDORA_ADMIN_USERNAME: fedoraAdmin
+      FEDORA_ADMIN_PASSWORD: fedoraAdmin
+    ports:
+      - "127.0.0.1:8080:8080"
+    volumes:
+      - fedora_data:/usr/local/tomcat/fcrepo-home
+    healthcheck:
+      test: ["CMD-SHELL", "curl -fsS -u fedoraAdmin:fedoraAdmin http://localhost:8080/fcrepo/rest/ > /dev/null"]
+      interval: 10s
+      timeout: 5s
+      retries: 30
+      start_period: 60s
+
+volumes:
+  root_node_modules:
+  api_node_modules_v2:
+  client_node_modules:
+  vudl_data:
+  solr_data:
+  fedora_data:
+  vufind_cache:
+  vufind_db:

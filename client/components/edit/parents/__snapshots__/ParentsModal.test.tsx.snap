@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ParentsModal renders correctly for a loaded PID 1`] = `
+<DocumentFragment>
+  Parents Editor (foo:123)
+  <button
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium closeButton css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+    tabindex="0"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+      data-testid="CloseIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      />
+    </svg>
+  </button>
+  ObjectLoader: {"pid":"foo:123"}
+  <h3>
+    Add New Parent:
+  </h3>
+  ParentPicker: {"pid":"foo:123"}
+  <h3>
+    Parents
+  </h3>
+  ParentList: {"pid":"foo:123"}
+</DocumentFragment>
+`;
+
+exports[`ParentsModal renders correctly for a non-loaded PID 1`] = `
+<DocumentFragment>
+  Parents Editor (foo:123)
+  <button
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium closeButton css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+    tabindex="0"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+      data-testid="CloseIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      />
+    </svg>
+  </button>
+  ObjectLoader: {"pid":"foo:123"}
+</DocumentFragment>
+`;
+
+exports[`ParentsModal renders correctly when PID is unset 1`] = `
+<DocumentFragment>
+  Parents Editor ()
+  <button
+    class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium closeButton css-53g0n7-MuiButtonBase-root-MuiIconButton-root"
+    tabindex="0"
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-1umw9bq-MuiSvgIcon-root"
+      data-testid="CloseIcon"
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+      />
+    </svg>
+  </button>
+</DocumentFragment>
+`;

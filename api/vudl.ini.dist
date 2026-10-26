@@ -1,0 +1,535 @@
+# URL of React client:
+client_url = "http://localhost:3000"
+
+# Base URL of the backend code:
+backend_url = "http://localhost:9000"
+
+# Secret phrase to use for session encryption:
+session_key = "vanilla hot cocoa"
+
+# Credentials for connecting to a Fedora backend:
+fedora_username = "fedoraAdmin"
+fedora_password = "fedoraAdmin"
+fedora_pid_namespace = "vudl"
+base_url = "http://localhost:8080/rest"
+
+# The first number for the PID generator to use:
+fedora_initial_pid = "0"
+
+# The maximum number of times to retry a PUT to Fedora after receiving a 409 error
+max_409_retries = 3
+
+# Values to be indexed into commonly-used Solr facet fields:
+institution = "My University"
+collection = "Digital Library"
+
+# Top-level PIDs (used to determine the end of the chain when retrieving parents)
+# This is commonly the PID of your very top-level object -- e.g. vudl:1 -- and
+# the PID of your top-level public object -- e.g. vudl:3.
+top_level_pids[] = "vudl:1"
+top_level_pids[] = "vudl:3"
+
+# The trash PID should be an Inactive Folder created inside your Holding Area.
+# When set, this PID will be automatically included in the "favorite PIDs" List,
+# will enable smarter delete buttons, and will be given special exemption from
+# standard containment rules to allow anything to be moved there.
+#trash_pid = "vudl:xxx"
+
+# Settings for Tesseract OCR
+tesseract_path = "/usr/local/bin/tesseract"
+
+# This setting lists characters that may be included in OCR output. Leave the
+# setting commented out for unfiltered output.
+#tesseract_allowed_characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789.,;:!'\"()&$%-+=[]?<>“”‘’—"
+
+# Settings for ocrmypdf (omit setting to skip this step if you aren't using it)
+#ocrmypdf_path = /usr/local/bin/ocrmypdf
+
+# VuFind Base URL. Required for indexing first/last change dates into Solr and
+# for generating PDFs for existing items in the collection. You can omit the
+# setting if you do not use VuFind and do not need these features.
+vufind_url = "https://myserver"
+
+# Internal IIIF service origin used by PDF generation when the public image
+# service URL is not reachable from the backend (for example, in Docker).
+#iiif_internal_origin = "http://cantaloupe:8182"
+
+# Base URL and core name for Solr instance containing index
+solr_url = "http://localhost:8983/solr"
+solr_core = "biblio"
+
+# Directory where you can cache documents as they are sent to Solr; this cache can
+# then be used to quickly rebuild the Solr index without having to rebuild all of
+# the data from Fedora. Comment out to disable caching.
+#solr_document_cache_dir = /path/to/solr/cache/directory
+
+# Temp directory used for PDF generation
+pdf_directory = "/tmp/"
+
+# Settings for FFmpeg
+#ffmpeg_path = /usr/bin/ffmpeg
+
+# Full path to FITS command (see https://projects.iq.harvard.edu/fits/downloads)
+fits_command = /usr/local/fits/fits.sh
+
+# JVM to use for running Java apps (used for Tika)
+java_path = java
+
+# Settings for Tika (used for text extraction during Solr indexing)
+tika_path = /opt/tika/tika.jar
+
+# If you want to override defaults, you can specify a configuration file.
+#tika_config_file = /opt/tika/tika-config.xml
+
+# Settings for the textcleaner OCR preparation script. It can be downloaded
+# from http://www.fmwconcepts.com/imagemagick/textcleaner/index.php
+textcleaner_path = "/usr/local/bin/textcleaner"
+textcleaner_switches = "-g -e stretch -u -T"
+
+# Base path where incoming files are stored; this must contain two levels
+# of subdirectories, the first representing categories and the second
+# representing jobs within those categories.
+holding_area_path = "/opt/holdingarea"
+
+# Base path where processed files are moved after ingestion.
+processed_area_path = "/opt/processed"
+
+# Prefix to add to all newly-ingested job names (e.g. "_" to sort new jobs to top of holding area)
+job_name_prefix = ""
+
+# Allowed origins, IPs, and addresses for CORS
+allowed_origins[] = http://localhost:3000 # api
+allowed_origins[] = http://localhost:9000 # client
+
+# The lowest number recognized as a legal year during indexing
+minimum_valid_year = 1000
+
+# Articles that should be stripped from the title sort field during indexing.
+# Be sure to include a trailing space if the articles are whole words.
+# These should always be entered in all-lowercase, as sort text will be lowercased.
+articles_to_strip[] = "a "
+articles_to_strip[] = "an "
+articles_to_strip[] = "the "
+
+# "Favorite PIDs" that should be displayed in the "edit parents" dialog box.
+# Useful for example, to create an "in progress" holding area. See the trash_pid
+# setting above for a separate way to add your trash can to favorites.
+#favorite_pids[] = "vudl:1234"
+#favorite_pids[] = "vudl:1235"
+
+# Authentication settings
+[Authentication]
+# Type of authentication to use (local = local database; saml = SAML)
+strategy = local
+# Algorithm to use for hashing passwords (when strategy = local)
+hash_algorithm = sha1
+# Salt value for hashing passwords (when strategy = local)
+salt = "AnyMadeUpValueYouLike"
+# Set to false to disable passwords (and allow username-only logins) when strategy = local; recommended for testing only.
+require_passwords = true
+# SAML Entry point URL (required when strategy = saml)
+#saml_entry_point = "https://my-idp"
+# Certificate for use in SAML transactions (required when strategy = saml; must be single line)
+#saml_certificate = "MIICizCCAfQCCQCY8tKaMc0BMjANBgkqh ... W=="
+# Uncomment this list to restrict the usernames allowed to access the system; if the setting is omitted, all valid users will be accepted.
+#legal_usernames[] = "allowedUsername1"
+#legal_usernames[] = "allowedUsername2"
+
+# Defines user account(s) to be created in the database when the database is initialized:
+[Authentication.initial_users]
+admin_user = admin_password
+
+# Database settings
+[Database]
+# Supported values: mysql2, sqlite3
+client = sqlite3
+
+# Database connection settings (required values vary based on client setting above)
+[Database.connection]
+# Required when client = sqlite3; filename of database, relative to api directory
+filename = "./data/auth.sqlite3"
+# Required when client = mysql2
+# To set up a MySQL/MariaDB database, run these commands in the database client:
+#    create database vudl;
+#    create user 'your_database_user'@'localhost' identified by 'your_database_password';
+#    grant all on vudl.* to 'your_database_user'@'localhost';
+#host = 127.0.0.1
+#port = 3306
+#user = your_database_user
+#password = your_database_password
+#database = vudl
+
+# Mapping of language codes to display names; used for indexing
+[LanguageMap]
+ab = Abkhazian
+af = Afrikaans
+an = Aragonese
+ar = Arabic
+as = Assamese
+az = Azerbaijani
+be = Belarusian
+bg = Bulgarian
+bn = Bengali
+bo = Tibetan
+br = Breton
+bs = Bosnian
+ca = Catalan / Valencian
+ce = Chechen
+co = Corsican
+cs = Czech
+cu = Church Slavic
+cy = Welsh
+da = Danish
+de = German
+el = Greek
+en = English
+eo = Esperanto
+es = Spanish / Castilian
+et = Estonian
+eu = Basque
+fa = Persian
+fi = Finnish
+fj = Fijian
+fo = Faroese
+fr = French
+fy = Western Frisian
+ga = Irish
+gd = Gaelic / Scottish Gaelic
+gl = Galician
+grc = Ancient Greek
+gv = Manx
+he = Hebrew
+hi = Hindi
+hr = Croatian
+ht = Haitian; Haitian Creole
+hu = Hungarian
+hy = Armenian
+id = Indonesian
+is = Icelandic
+it = Italian
+ja = Japanese
+jv = Javanese
+ka = Georgian
+kg = Kongo
+ko = Korean
+ku = Kurdish
+kw = Cornish
+ky = Kirghiz
+la = Latin
+lb = Luxembourgish; Letzeburgesch
+li = Limburgan; Limburger; Limburgish
+ln = Lingala
+lt = Lithuanian
+lv = Latvian
+mg = Malagasy
+mk = Macedonian
+mn = Mongolian
+mo = Moldavian
+ms = Malay
+mt = Maltese
+my = Burmese
+nb = Norwegian (Bokmål)
+ne = Nepali
+nl = Dutch
+nn = Norwegian (Nynorsk)
+no = Norwegian
+oc = Occitan (post 1500); Provençal
+pl = Polish
+pt = Portuguese
+pt-BR = Portuguese (Brazilian)
+rm = Raeto-Romance
+ro = Romanian
+ru = Russian
+sc = Sardinian
+se = Northern Sami
+sk = Slovak
+sl = Slovenian
+so = Somali
+sq = Albanian
+sr = Serbian
+sv = Swedish
+sw = Swahili
+tk = Turkmen
+tr = Turkish
+ty = Tahitian
+uk = Ukrainian
+ur = Urdu
+uz = Uzbek
+vi = Vietnamese
+vo = Volapuk
+yi = Yiddish
+zh = Chinese
+
+# Collection Models
+[collection_models]
+List = "vudl-system:ListCollection"
+Resource = "vudl-system:ResourceCollection"
+Folder = "vudl-system:FolderCollection"
+
+# Data Models
+[data_models]
+Image = "vudl-system:ImageData"
+PDF = "vudl-system:PDFData"
+DOC = "vudl-system:DOCData"
+Audio = "vudl-system:AudioData"
+Video = "vudl-system:VideoData"
+XLS = "vudl-system:XLSData"
+Text = "vudl-system:TextData"
+
+# AudioData
+[models.AudioData.datastreams.WAV.mimetype]
+allowedType = "audio"
+allowedSubtypes = "wav,x-wav"
+[models.AudioData.datastreams.MP3.mimetype]
+allowedType = "audio"
+allowedSubtypes = "mpeg3,x-mpeg-3,mpeg"
+[models.AudioData.datastreams.OGG.mimetype]
+allowedType = "audio"
+allowedSubtypes = "ogg"
+
+# CollectionModel
+[models.CollectionModel.datastreams]
+
+# CoreModel
+[models.CoreModel.datastreams.THUMBNAIL.mimetype]
+allowedType = "image"
+allowedSubtypes = "jpeg,gif,png"
+[models.CoreModel.datastreams.LICENSE.mimetype]
+allowedType = "text"
+allowedSubtypes = "xml"
+[models.CoreModel.datastreams.DC.mimetype]
+allowedType = "text"
+allowedSubtypes = "xml"
+
+# DOCData
+[models.DOCData.datastreams]
+
+# DataModel
+[models.DataModel.datastreams.MASTER.mimetype]
+allowedType = "*"
+allowedSubtypes = "*"
+[models.DataModel.datastreams.MASTER-MD.mimetype]
+allowedType = "text"
+allowedSubtypes = "xml"
+
+# FolderCollection
+[models.FolderCollection.datastreams]
+
+# ImageData
+[models.ImageData.datastreams.LARGE.mimetype]
+allowedType = "image"
+allowedSubtypes = "*"
+[models.ImageData.datastreams.MEDIUM.mimetype]
+allowedType = "image"
+allowedSubtypes = "*"
+[models.ImageData.datastreams.OCR-DIRTY.mimetype]
+allowedType = "text"
+allowedSubtypes = "plain"
+[models.ImageData.datastreams.OCR-EDITED.mimetype]
+allowedType = "text"
+allowedSubtypes = "plain"
+
+# ListCollection
+[models.ListCollection.datastreams]
+
+# PDFData
+[models.PDFData.datastreams]
+
+# ResourceCollection
+[models.ResourceCollection.datastreams.AGENTS.mimetype]
+allowedType = "text"
+allowedSubtypes = "xml"
+[models.ResourceCollection.datastreams.PROCESS-MD.mimetype]
+allowedType = "text"
+allowedSubtypes = "xml"
+
+# VideoData
+[models.VideoData.datastreams.MP4.mimetype]
+allowedType = "video"
+allowedSubtypes = "mp4"
+[models.VideoData.datastreams.TEXT-TRANSCRIPT.mimetype]
+allowedType = "text"
+allowedSubtypes = "plain"
+[models.VideoData.datastreams.VTT.mimetype]
+allowedType = "text"
+allowedSubtypes = "vtt"
+
+# XLSData
+[models.XLSData.datastreams]
+
+# Licenses
+[licenses.ATTRIBUTION]
+name = "Attribution"
+uri = "http://creativecommons.org/licenses/by/4.0/"
+[licenses.ATTRIBUTION_SHARE_ALIKE]
+name = "Attribution-ShareAlike"
+uri = "http://creativecommons.org/licenses/by-sa/4.0/"
+[licenses.ATTRIBUTION_NO_DERIVS]
+name = "Attribution-NoDerivs"
+uri = "http://creativecommons.org/licenses/by-nd/4.0/"
+[licenses.ATTRIBUTION_NON_COMMERCIAL]
+name = "Attribution-NonCommercial"
+uri = "http://creativecommons.org/licenses/by-nc/4.0/"
+[licenses.ATTRIBUTION_NON_COMMERCIAL_SHARE_ALIKE]
+name = "Attribution-NonCommercial-ShareAlike"
+uri = "http://creativecommons.org/licenses/by-nc-sa/4.0/"
+[licenses.ATTRIBUTION_NON_COMMERCIAL_NO_DERIVS]
+name = "Attribution-NonCommercial-NoDerivs"
+uri = "http://creativecommons.org/licenses/by-nc-nd/4.0/"
+[licenses.CC0]
+name = "CC0 1.0 Universal (Public Domain)"
+uri = "https://creativecommons.org/publicdomain/zero/1.0/"
+[licenses.PUBLIC_DOMAIN]
+name = "Public Domain Mark"
+uri = "https://creativecommons.org/public-domain/pdm/"
+
+# Agent
+[agent]
+
+roles[] = "EDITOR"
+roles[] = "ARCHIVIST"
+roles[] = "PRESERVATION"
+roles[] = "DISSEMINATOR"
+roles[] = "CUSTODIAN"
+roles[] = "IPOWNER"
+roles[] = "CREATOR"
+
+types[] = "ORGANIZATION"
+types[] = "INDIVIDUAL"
+
+[agent.defaults]
+name = "My Library, My University"
+role = "DISSEMINATOR"
+type = "ORGANIZATION"
+
+# Dublin Core Fields/Values Supported By Editor
+[dublin_core.dc:title]
+label = "Title"
+type = "text"
+
+[dublin_core.dc:creator]
+label = "Creator"
+type = "text"
+
+[dublin_core.dc:subject]
+label = "Subject"
+type = "text"
+
+[dublin_core.dc:description]
+label = "Description"
+type = "html"
+
+[dublin_core.dc:publisher]
+label = "Publisher"
+type = "text"
+
+[dublin_core.dc:contributor]
+label = "Contributor"
+type = "text"
+
+[dublin_core.dc:date]
+label = "Date"
+type = "text"
+
+[dublin_core.dc:type]
+label = "Type"
+type = "text"
+
+[dublin_core.dc:format]
+label = "Format"
+type = "dropdown"
+values[] = "Book"
+values[] = "Journal"
+
+[dublin_core.dc:identifier]
+label = "Identifier"
+type = "locked"
+
+[dublin_core.dc:source]
+label = "Source"
+type = "text"
+
+[dublin_core.dc:language]
+label = "Language"
+type = "dropdown"
+values[] = "English"
+values[] = "Latin"
+
+[dublin_core.dc:relation]
+label = "Relation"
+type = "text"
+
+[dublin_core.dc:coverage]
+label = "Coverage"
+type = "text"
+
+[dublin_core.dc:rights]
+label = "Rights"
+type = "text"
+
+# You can set default values for top-level process metadata
+[process_metadata_defaults]
+processLabel = "Digitize Original Item"
+processOrganization = "My Library, My University"
+
+# You can set up tools as presets in the Process Metadata screen; just number each
+# uniquely in the section header (e.g. [tool_presets.0], [tool_presets.1], etc.)
+[tool_presets.0]
+label = "Example tool"
+serialNumber = "12345"
+description = "Just an example"
+make = "Example"
+version = "1"
+
+[queue]
+# This is the queue name that will be used for messages in Redis:
+defaultQueueName = "vudl"
+
+# This is the length of time (in ms) that workers should lock jobs; set it higher
+# if you are seeing "Missing lock for job" errors in your queue.
+lockDuration = 30000
+
+# This section can be used to map specific job types to different queue names. this
+# is useful if you want to run multiple queue workers and triage work. The example
+# below shows light/medium/heavy queues to sort work by CPU intensity, so that
+# lighter work could potentially be processed by multiple parallel workers.
+[queue.jobMap]
+#derivatives = "vudl-medium"
+#generatepdf = "vudl-heavy"
+#index = "vudl-light"
+#ingest = "vudl-heavy"
+#metadata = "vudl-medium"
+#reindex = "vudl-light"
+
+# This section controls how BullMQ connects to Redis.
+# See the ioredis documentation (https://ioredis.readthedocs.io/en/latest/API/) for available options.
+[queue.connection]
+host = "localhost"
+port = 6379
+#password = "mypass"
+
+# These settings control the behavior of the indexer job processor
+[indexer]
+# Total number of times to check that the current job is the earliest running job for
+# its pid before giving up.
+lockRetries = 60
+# Time (in ms) to wait before re-checking the lock, when an earlier job processor
+# is working on the active processor's pid.
+lockWaitMs = 1000
+# Total number of times to try an index job before giving up due to exceptions
+exceptionRetries = 10
+# Time (in ms) to wait between retries after encountering an indexing exception
+exceptionWaitMs = 500
+
+# These settings control the Sharp image processing library
+[sharp]
+limitInputPixels = 268402689
+
+# These settings control file uploads
+[upload]
+# Upload limit in bytes (default = 200MB)
+sizeLimit = 209715200
+
+[notify]
+method = ntfy
+ntfy_defaultChannel = vudl-ntfy

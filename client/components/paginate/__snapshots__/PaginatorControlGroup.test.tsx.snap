@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PaginatorControlGroup renders 1`] = `
+<DocumentFragment>
+  <div
+    class="group"
+    id="testLabel"
+  >
+    <button>
+      testChild
+    </button>
+  </div>
+</DocumentFragment>
+`;

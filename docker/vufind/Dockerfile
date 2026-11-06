@@ -1,3 +1,12 @@
+FROM node:20-bookworm AS universalviewer
+
+WORKDIR /tmp/universalviewer
+
+RUN npm pack universalviewer@4.3.0 --silent \
+    && mkdir -p /tmp/universalviewer/dist \
+    && tar -xzf universalviewer-4.3.0.tgz --strip-components=2 \
+        -C /tmp/universalviewer/dist package/dist
+
 FROM php:8.2-apache-bookworm
 
 ARG VUFIND_VERSION=v11.1.0
@@ -58,6 +67,7 @@ RUN mkdir -p /usr/local/vufind /usr/local/vufind/local/cache \
     && sed -i \
         -e '/^\[Site\]/,/^\[/ s#^url[[:space:]]*=.*#url = http://localhost:8081#' \
         -e '/^\[Site\]/,/^\[/ s#^timezone[[:space:]]*=.*#timezone = UTC#' \
+        -e '/^\[Site\]/,/^\[/ s#^theme[[:space:]]*=.*#theme = vudiglib5#' \
         -e '/^\[Catalog\]/,/^\[/ s#^driver[[:space:]]*=.*#driver = NoILS#' \
         -e '/^\[Index\]/,/^\[/ s#^url[[:space:]]*=.*#url = http://solr:8983/solr#' \
         -e '/^\[Database\]/,/^\[/ s#^database[[:space:]]*=.*#database = mysql://vufind:vufind@mariadb/vufind#' \
@@ -65,6 +75,10 @@ RUN mkdir -p /usr/local/vufind /usr/local/vufind/local/cache \
     && chown -R www-data:www-data /usr/local/vufind/local \
     && rm -rf /tmp/vufdl
 
+RUN mkdir -p /usr/local/vufind/themes/vudiglib5/js/vendor/gh-shared-nav \
+    && printf '{}\n' > /usr/local/vufind/themes/vudiglib5/js/vendor/gh-shared-nav/navigation.json
+
+COPY --from=universalviewer /tmp/universalviewer/dist/ /usr/local/vufind/themes/vudiglib5/assets/uv-4.3.0/
 COPY apache.conf /etc/apache2/sites-available/000-default.conf
 
 EXPOSE 8081
